@@ -1,5 +1,5 @@
-from domain.entities.car import Car
 from domain.repositories.car_repository import CarRepository
+from domain.entities.car import Car
 
 
 class CreateCarUseCase:
