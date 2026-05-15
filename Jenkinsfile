@@ -10,15 +10,13 @@ pipeline {
     stages {
 
         stage('Test') {
-            agent {
-                docker {
-                    image 'python:3.9-slim'
-                    reuseNode true
-                }
-            }
             steps {
-                sh 'pip install -r requirements.txt'
-                sh 'pytest tests/ -v'
+                sh '''
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    pip install -r requirements.txt
+                    pytest tests/ -v
+                '''
             }
         }
 
