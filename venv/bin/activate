@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/kirill/Desktop/разработкаПО/2/backend/venv"
+VIRTUAL_ENV="/Users/kirill/Desktop/разработкаПО/4/backend/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
