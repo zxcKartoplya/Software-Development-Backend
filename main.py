@@ -6,7 +6,7 @@ from infrastructure.database import Base, engine
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Car Factory API DOCS")
+app = FastAPI(title="Car Factory API")
 
 app.add_middleware(
     CORSMiddleware,
